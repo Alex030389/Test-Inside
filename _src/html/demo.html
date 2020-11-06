@@ -1,0 +1,65 @@
+@@include('block/head.html')
+@@include('block/header/header.html')
+
+<main class="main">
+
+  @@include('block/breadcrumb.html')
+  <!-- //////////////////////////////////////////////////// samples -->
+  <section class="samples section">
+    <div class="container container_narrow">
+      <h1 class="title title_mb_md">Try our material</h1>
+      <div class="samples__block">
+        <div class="samples__box-content">
+          <p>Get a free sample of any exam Questions and Answers on the web site</p>
+          <ul class="samples__list list">
+            <li class="list__item">Exam Engine with customizable criteria</li>
+            <li class="list__item">Score comparison and improvement check</li>
+            <li class="list__item">Immediate Download after Payment</li>
+            <li class="list__item">Tested and verified malware-free software</li>
+          </ul>
+          <form class="samples__form form" action="#">
+            <div class="form__row">
+              <div class="form__col form__col_2 form-group">
+                <select class="form-control" name="vendor" data-lib="selectric">
+                  <option value="" disabled selected>Select a vendor...</option>
+                  <option value="two">two</option>
+                  <option value="three">three</option>
+                  <option value="three">four</option>
+                </select>
+              </div>
+  
+              <div class="form__col form__col_2 form-group">
+                <select class="form-control" name="exam" data-lib="selectric">
+                  <option value="" disabled selected>Select an exam...</option>
+                  <option value="two">two</option>
+                  <option value="three">three</option>
+                  <option value="three">four</option>
+                </select>
+              </div>
+  
+              <div class="form__col form__col_2 form-group">
+                <input class="form-control" type="email" placeholder="Enter your email address">
+              </div>
+              <div class="form__col form__col_2 form-group">
+                <button class="btn btn_primary btn_lg">Download Demo</button>
+              </div>
+            </div>
+          </form>
+
+        </div><!--/samples__box-content-->
+        <figure class="samples__box-img d-lg-none">
+          <img src="./design/img/book/tryDemo2.jpg" alt="tryDemo2">
+        </figure>
+      </div><!--/samples__block-->
+    </div><!--/container-->
+  </section>
+
+  <!-- /////////////////////////////////////////////////////  -->
+  <!-- <section class="reviews section">
+
+  </section> -->
+  
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/scripts.html')

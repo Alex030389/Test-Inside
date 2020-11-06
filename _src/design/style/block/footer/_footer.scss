@@ -1,0 +1,39 @@
+.footer {
+  background: $c-blue-linear;
+}
+
+.footer__nav {
+}
+
+.footer__menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -15px;
+  padding: 40px 0 20px;
+
+  @media (max-width: $sm) {
+    justify-content: flex-start;
+  }
+}
+
+.footer__menu-item {
+  margin: 0 15px 15px;
+}
+
+.footer__menu-link {
+}
+
+.footer__cards {
+  margin: 0 auto 46px;
+}
+
+.footer__copyright {
+  padding: 14px 0;
+
+  font-size: 14px;
+  text-align: center;
+  color: #869fb2;
+
+  background-color: #293741;
+}

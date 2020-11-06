@@ -1,0 +1,31 @@
+.top {
+}
+
+.top__container {
+  display: flex;
+  padding-bottom: 10px;
+
+  @media (max-width: $lg) {
+    flex-direction: column;
+  }
+}
+
+.top__col {
+  width: calc(100% - 140px);
+
+  @media (max-width: $lg) {
+    width: 100%;
+  }
+
+  &:first-child {
+    margin-right: 140px;
+
+    @media (max-width: $xl) {
+      margin-right: 40px;
+    }
+
+    @media (max-width: $lg) {
+      margin-bottom: 50px;
+    }
+  }
+}

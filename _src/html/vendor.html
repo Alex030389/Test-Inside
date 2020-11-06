@@ -1,0 +1,61 @@
+@@include('block/head.html')
+@@include('block/header/header.html')
+
+<main class="main">
+
+  @@include('block/breadcrumb.html')
+  <!-- //////////////////////////////////////////////////// vendor -->
+    <div class="vendor">
+      <div class="container container_narrow">
+        @@include('block/product-header/product-header.html')
+      </div>
+
+      <section class="vendor__section section section_lite_blue">
+        <div class="container container_narrow">
+          <h2 class="title-2 title-2_mb_md title-2_ta_left">Axis Communications Certifications</h2>
+          <ul class="vendor__list">
+            @@for(var i = 0; i < 5; i++) {
+              <li class="vendor__item">
+                <a class="link" href="#">AXIS CERTIFIED PROFESSIONAL</a>
+              </li>
+              <li class="vendor__item">
+                <a class="link" href="#">RHIA</a>
+              </li>
+              <li class="vendor__item">
+                <a class="link" href="#">CERTIFIED HOTEL ADMINISTRATOR
+                </a>
+              </li>
+              <li class="vendor__item">
+                <a class="link" href="#">NRS II</a>
+              </li>
+            }
+          </ul>
+        </div>
+      </section>
+
+      <section class="venodr__section section section_lite_grey">
+        <div class="container container_narrow">
+          <h2 class="title-2 title-2_mb_md title-2_ta_left">All Axis Communications Exams</h2>
+          <ul class="vendor__list">
+            @@for(var i = 0; i < 3; i++) {
+              <li class="vendor__item">
+                <a class="link" href="#">AX0-100</a>
+              </li>
+              <li class="vendor__item">
+                <a class="link" href="#">7750X</a>
+              </li>
+              <li class="vendor__item">
+                <a class="link" href="#">7141X</a>
+              </li>
+              <li class="vendor__item">
+                <a class="link" href="#">Maya12_A</a>
+              </li>
+            }        
+          </ul>
+        </div>
+      </section>
+    </div><!--/vendor-->
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/scripts.html')

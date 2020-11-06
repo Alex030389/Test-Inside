@@ -1,0 +1,31 @@
+.our-clients {
+}
+
+.our-clients__wrap-all-logos {
+}
+
+.our-clients__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.our-clients__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $col-4;
+  padding: 0 10px 20px;
+
+  @media (max-width: $md) {
+    width: $col-3;
+  }
+
+  @media (max-width: $sm) {
+    width: $col-2;
+  }
+
+  img {
+    flex-shrink: 0;
+    max-height: 100%;
+  }
+}

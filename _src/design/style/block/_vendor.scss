@@ -1,0 +1,22 @@
+.vendor {
+}
+
+.venodr__section {
+}
+
+.vendor__list {
+  column-count: 3;
+  column-gap: 50px;
+
+  @media (max-width: $lg) {
+    column-count: 2;
+  }
+
+  @media (max-width: $md) {
+    column-count: 1;
+  }
+}
+
+.vendor__item {
+  margin-bottom: 16px;
+}

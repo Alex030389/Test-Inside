@@ -1,0 +1,37 @@
+.table {
+  width: 100%;
+
+  border-collapse: collapse;
+  font-size: 16px;
+
+  thead {
+    tr {
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
+    }
+  }
+
+  tbody {
+    tr {
+      border-bottom: 1px solid #b4b4b4;
+
+      &:last-child {
+        border-color: #000;
+      }
+    }
+  }
+
+
+  th {
+    font-weight: 500;
+  }
+
+  td,
+  th {
+    padding: 10px 30px;
+
+    @media (max-width: $lg) {
+      padding: 8px 15px;
+    }
+  }
+}

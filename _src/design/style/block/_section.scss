@@ -1,0 +1,17 @@
+.section {
+  padding-top: 48px;
+  padding-bottom: 60px;
+
+  @media (max-width: $md) {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  &_lite_grey {
+    background-color: $c-grey-lite;
+  }
+
+  &_lite_blue {
+    background-color: $c-blue-lite;
+  }
+}

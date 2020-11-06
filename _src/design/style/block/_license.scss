@@ -1,0 +1,61 @@
+.license {
+}
+
+.license__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.license__col {
+  width: $col-3;
+  padding: 0 10px 20px;
+
+  @media (max-width: $lg) {
+    width: $col-1;
+  }
+
+  &_large {
+    width: 100% - $col-3;
+
+    @media (max-width: $lg) {
+      order: -1;
+      width: $col-1;
+    }
+  }
+}
+
+
+.license__box {
+  height: 100%;
+  padding: 20px;
+
+  &_large {
+  }
+}
+
+.license__title {
+  margin-bottom: 16px;
+}
+
+.license__form-row {
+  margin-bottom: 0;
+
+  &:first-of-type {
+    margin-bottom: 20px;
+    @media (max-width: $sm) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.license__title-2 {
+}
+
+.license__btn {
+  width: 100%;
+  max-width: 320px;
+  margin-left: auto;
+}
+
+.license__text {
+}

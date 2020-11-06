@@ -1,0 +1,74 @@
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 0 -10px -10px;
+}
+
+.benefits__item {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  min-height: 96px;
+  margin: 0 10px 20px;
+  padding: 12px 32px 12px 96px;
+
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: left;
+
+  @media (max-width: $md) {
+    width: 100%;
+  }
+
+  @media (max-width: $sm) {
+    min-height: 0;
+    margin-bottom: 8px;
+    padding: 16px 32px 16px 52px;
+    padding-left: 52px;
+
+    font-size: 16px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 32px;
+
+    width: 44px;
+    height: 44px;
+
+    background: url(../img/icon/checked.svg);
+    background-size: 100% 100%;
+    transform: translate(0, -50%);
+
+    @media (max-width: $lg) {
+      top: 25px;
+
+      transform: translate(0, 0);
+    }
+
+    @media (max-width: $sm) {
+      top: 15px;
+      left: 15px;
+
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &_col_3 {
+    width: calc(100% / 3 - 20px);
+
+    @media (max-width: $xl) {
+      width: calc(100% / 2 - 20px);
+    }
+  }
+
+  &_col_2 {
+    width: calc(100% / 2 - 20px);
+  }
+}

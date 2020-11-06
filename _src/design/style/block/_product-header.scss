@@ -1,0 +1,38 @@
+
+.product-header {
+  display: flex;
+  align-items: center;
+  padding-top: 56px;
+  padding-bottom: 60px;
+
+  @media (max-width: $md) {
+    padding-top: 34px;
+    padding-bottom: 40px;
+  }
+
+  @media (max-width: $sm) {
+    flex-direction: column;
+  }
+
+  &_pb_0 {
+    padding-bottom: 0;
+  }
+}
+
+.product-header__wrap-img {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  margin-right: 40px;
+
+  @media (max-width: $sm) {
+    margin-right: 0;
+  }
+}
+
+.product-header__title {
+  font-size: 40px;
+  line-height: 1;
+}

@@ -1,0 +1,27 @@
+.menu {
+  display: flex;
+
+  opacity: 1;
+}
+
+.menu__item {
+  position: relative;
+}
+
+.menu__link {
+  display: inline-block;
+
+  font-size: 20px;
+  color: #a4d5e8;
+
+  transition: .3s;
+
+  @media (max-width: $xl) {
+    font-size: 17px;
+  }
+
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+}

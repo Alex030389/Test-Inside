@@ -1,0 +1,54 @@
+.guarant-cert {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.guarant-cert__box {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 0 0 170px;
+
+  line-height: 1.2;
+
+  background: url(../img/ui/guarantee.png) left center no-repeat;
+
+  @media (max-width: $md) {
+    padding-left: 140px;
+  }
+
+  @media (max-width: $xs) {
+    padding-left: 0;
+
+    background: none;
+  }
+}
+
+.guarant-cert__title {
+  margin-bottom: 15px;
+
+  font-weight: 500;
+  font-size: 44px;
+  color: $c-green;
+
+  @media (max-width: $md) {
+    font-size: 30px;
+  }
+
+  @media (max-width: $xs) {
+    min-height: 72px;
+    padding-left: 100px;
+
+    background: url(../img/ui/guarantee.png) left center no-repeat;
+    background-size: 70px;
+  }
+}
+
+.guarant-cert__p {
+  margin-bottom: 0;
+
+  font-size: 20px;
+
+  @media (max-width: $md) {
+    font-size: 18px;
+  }
+}

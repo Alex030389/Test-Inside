@@ -1,0 +1,79 @@
+@@include('block/head.html')
+@@include('block/header/header.html')
+
+<main class="main">
+
+  @@include('block/breadcrumb.html')
+  <!-- //////////////////////////////////////////////////// register -->
+  <section class="register section">
+    <div class="container container_narrow">
+      <h1 class="visually-hidden">Open a free Testinside account now!</h1>
+      <div class="register__inner">
+        <div class="register__row row">
+          <div class="register__col col">
+            <h2 class="title-2 title-2_fz_sm title-2_mb_sm">Login to Account</h2>
+            <form class="form" action="#">
+              <p>Sign in to your TestInside account - enter your username/email
+                address and password below.
+              </p>
+              <div class="register__form-group form-group">
+                <label class="form-label" for="address">Email Address</label>
+                <input class="form-control" id="address" name="address" type="text">
+              </div>
+              <div class="register__form-group form-group">
+                <label class="form-label" for="password">Password</label>
+                <input class="form-control" id="password" name="password" type="text">
+              </div>             
+              <div class="register__wrap-btn">
+                <button class="btn btn_primary btn_lg btn_w_320">Sign In</button> 
+              </div>
+              <div class="register__wrap-link">
+                <a class="link" href="#">Forgot your password</a>
+              </div>
+            </form>
+          </div>
+          <div class="register__col col">
+            <h2 class="title-2 title-2_fz_sm title-2_mb_sm">Register Now</h2>
+            <form class="form" action="#">
+              <p>Sign in to your TestInside account - enter your username/email
+                address and password below.
+              </p>
+              <div class="register__form-group form-group">
+                <label class="form-label" for="address">Email Address</label>
+                <input class="form-control" id="address" name="address" type="text">
+              </div>
+              <div class="register__form-group form-group">
+                <label class="form-label" for="password">Password</label>
+                <input class="form-control" id="password" name="password" type="text">
+              </div>
+              <div class="register__form-group form-group">
+                <label class="form-label" for="password">Confirm Password</label>
+                <input class="form-control" id="password" name="password" type="text">
+              </div>
+              <div class="register__form-group form-group form-group_checkbox">
+                <input class="form-checkbox" id="checkbox" type="checkbox">
+                <label class="form-label" for="checkbox">I'd like to receive newsletters from Test-inside.com to get more training information</label>                             
+              </div>
+              <p>
+                By clicking on 'Sign Up Now' below you are agreeing to the Test-Inside.com Privacy Policy.
+              </p>
+              <div class="register__wrap-btn">
+                <button class="btn btn_primary btn_lg btn_w_320">Sign Up Now</button> 
+              </div>
+            </form>
+          </div>
+        </div><!--/register__row-->
+        <p class="register__bottom-text">If you encounter any problems with accessing your account or signing in, please contact customer support : <a class="link" href="mailto:support@testinside.com">support@testinside.com</a> </p>
+      </div><!--/register__inner-->
+    </div><!--/container-->
+  </section>
+
+  <!-- /////////////////////////////////////////////////////  -->
+  <!-- <section class="reviews section">
+
+  </section> -->
+  
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/scripts.html')

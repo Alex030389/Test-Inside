@@ -1,0 +1,80 @@
+.allvendors {
+}
+
+.allvendors__alphabet-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -5px 30px;
+
+  @media (max-width: $md) {
+    margin-bottom: 10px;
+  }
+}
+
+.allvendors__alphabet-item {
+  margin: 0 5px 10px;
+}
+
+.allvendors__alphabet-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 38px;
+
+  color: #fff;
+
+  background-color: $c-blue;
+  border-radius: 4px;
+
+  transition: .3s;
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  @media (max-width: $md) {
+    width: 34px;
+    height: 28px;
+  }
+}
+
+.allvendors__abc-list {
+}
+
+.allvendors__abc-item {
+  position: relative;
+
+  padding: 15px 0 10px 80px;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $c-blue-lite;
+  }
+
+  @media (max-width: $md) {
+    padding-left: 50px;
+  }
+}
+
+.allvendors__abc-letter {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+
+  font-size: 24px;
+  line-height: 1;
+  color: $c-blue;
+}
+
+.allvendors__vendor-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.allvendors__vendor-item {
+  margin: 0 10px 10px;
+}
+
+.allvendors__vendor-link {
+}

@@ -1,0 +1,43 @@
+.d-none {
+  display: none;
+}
+
+@media (max-width: $xl) {
+  .d-xl-none {
+    display: none;
+  }
+
+  .d-xl-block {
+    display: block;
+  }
+
+  .d-xl-flex {
+    display: flex;
+  }
+}
+
+@media (max-width: $lg) {
+  .d-lg-none {
+    display: none;
+  }
+
+  .d-lg-block {
+    display: flex;
+  }
+}
+
+@media (max-width: $md) {
+  .d-md-none {
+    display: none;
+  }
+
+  .d-md-flex {
+    display: flex;
+  }
+}
+
+@media (max-width: $sm) {
+  .d-sm-none {
+    display: none;
+  }
+}

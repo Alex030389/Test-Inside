@@ -1,0 +1,49 @@
+.faq {
+}
+
+.faq__quest-row {
+  margin-bottom: 20px;
+
+  @media (max-width: $md) {
+    margin-bottom: 0;
+  }
+}
+
+.faq__quest-col {
+  width: $c-6;
+  margin-bottom: 30px;
+
+  @media (max-width: $md) {
+    width: $col-1;
+  }
+}
+
+.faq__quest-list {
+}
+
+.faq__quest-item {
+  margin-bottom: 8px;
+}
+
+// //////////////////////////// faq__answ
+.faq__answ {
+  &:not(:last-of-type) {
+    margin-bottom: 50px;
+
+    @media (max-width: $md) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.faq__answ-list {
+}
+
+.faq__answ-item {
+}
+
+.faq__answ-q {
+}
+
+.faq__answ-a {
+}

@@ -1,0 +1,64 @@
+@@include('block/head.html')
+@@include('block/header/header.html')
+
+<main class="main">
+  @@include('block/breadcrumb.html')
+  <!-- //////////////////////////////////////////////////// powerpacks -->
+  <section class="powerpacks section">
+    <div class="container">
+      <h1 class="title">Certification Bundles</h1>
+      <table class="powerpacks__table table">
+        <thead>
+          <tr>
+            <th colspan="2">
+              <a class="link-2" href="#">CompTIA</a>              
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          @@for(var i = 0; i < 8; i++) {
+            <tr>
+              <td>
+                <a class="link link_fw_500" href="#">CompTIA CompTIA A+</a> - (СompTIA Exams: <a class="link link_fw_500" href="#">220-1001</a> <a class="link link_fw_500" href="#">220-1002</a>) (4 products total)
+              </td>
+              <td>
+                <span class="d-sm-none">Bundle includes all 2 Exams</span>&ensp;<span class="text text_line-through">$239.96</span>&nbsp;<span class="text text_fw_500">$143.96</span> <button class="powerpacks__table-btn btn btn_secondary btn_md"><span>Buy Now</span></button>
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+
+      <table class="powerpacks__table table">
+        <thead>
+          <tr>
+            <th colspan="2">
+              <a class="link-2" href="#">Microsoft</a>              
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          @@for(var i = 0; i < 8; i++) {
+            <tr>
+              <td>
+                <a class="link link_fw_500" href="#">CompTIA CompTIA A+</a> - (СompTIA Exams: <a class="link link_fw_500" href="#">220-1001</a> <a class="link link_fw_500" href="#">220-1002</a>) (4 products total)
+              </td>
+              <td>
+                <span class="d-sm-none">Bundle includes all 2 Exams</span>&ensp;<span class="text text_line-through">$239.96</span>&nbsp;<span class="text text_fw_500">$143.96</span> <button class="powerpacks__table-btn btn btn_secondary btn_md"><span>Buy Now</span></button>
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div><!--/container-->
+  </section>
+
+  @@include('block/vend-includ.html', {
+    "title": "Vendors Included"
+  })
+  @@include('block/why-choose.html')
+  @@include('block/our-clients.html')
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/scripts.html')

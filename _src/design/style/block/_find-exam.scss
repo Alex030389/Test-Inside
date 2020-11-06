@@ -1,0 +1,25 @@
+.find-exam {
+}
+
+.find-exam__container {
+  max-width: 1400px;
+}
+
+.find-exam__form {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px -10px;
+}
+
+.find-exam__form-group {
+  width: $col-4;
+  padding: 0 10px 20px;
+
+  @media (max-width: $lg) {
+    width: $col-2;
+  }
+
+  @media (max-width: $sm) {
+    width: $col-1;
+  }
+}

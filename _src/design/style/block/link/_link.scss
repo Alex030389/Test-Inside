@@ -1,0 +1,27 @@
+.link {
+  color: $c-main;
+
+  background-image: linear-gradient(to right, $c-main 0, $c-main 100%);
+  background-repeat: repeat-x;
+  background-position: left 1.15em;
+  background-size: 1px 1px;
+
+  transition: .2s;
+
+  &:hover {
+    color: $c-main;
+    text-decoration: none;
+  }
+
+  &_fw_500 {
+    font-weight: 500;
+  }
+}
+
+.link-btn {
+  @extend .btn-reset;
+
+@extend .link;
+
+  line-height: 1.15;
+}

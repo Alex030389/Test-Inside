@@ -1,0 +1,105 @@
+.exam {
+  padding-bottom: 0;
+
+  @media (max-width: $md) {
+    padding-bottom: 0;
+  }
+}
+
+.exam__wrap-title {
+  margin-bottom: 30px;
+}
+
+.exam__box-top {
+  padding: 0 0 30px;
+
+  @media (max-width: $lg) {
+    padding-bottom: 40px;
+  }
+}
+
+// ////////////////////////
+.exam__box-img-demo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: $c-3;
+  padding-top: 20px;
+
+  @media (max-width: $lg) {
+    width: $c-5;
+  }
+
+  @media (max-width: $md) {
+    width: $c-12;
+    margin-bottom: 30px;
+    padding-top: 0;
+  }
+}
+
+.exam__img {
+  margin-bottom: 30px;
+
+  @media (max-width: $md) {
+    width: 180px;
+  }
+}
+
+.exam__btn-demo {
+  width: 100%;
+  max-width: 260px;
+}
+
+// ///////////////////
+.exam__about {
+  width: $c-5;
+
+  @media (max-width: $lg) {
+    width: $c-7;
+  }
+
+  @media (max-width: $md) {
+    width: $c-12;
+  }
+
+  &_lg {
+    width: $c-8;
+  }
+}
+
+.exam__info {
+  margin-bottom: 30px;
+
+  b {
+    font-weight: 500;
+    color: $c-blue-dark;
+  }
+}
+
+// ////////////////////////
+.exam__purchase {
+  width: $c-4;
+  padding-top: 30px;
+
+  @media (max-width: $lg) {
+    width: $c-12;
+  }
+}
+
+.exam__box-bottom {
+  padding: 40px 0;
+
+  background-color: $c-blue-lite;
+}
+
+.exam__faq-link {
+  display: block;
+
+  font-size: 26px;
+  text-align: center;
+  color: $c-green;
+
+  @media (max-width: $sm) {
+    font-size: 20px;
+  }
+}

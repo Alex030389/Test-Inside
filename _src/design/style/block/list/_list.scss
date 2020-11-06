@@ -1,0 +1,15 @@
+.list {
+  @extend .list-reset;
+}
+
+.list__item {
+  margin-bottom: 10px;
+  padding-left: 30px;
+
+  background: url(../img/icon/checked.svg) 0 4px  no-repeat;
+  background-size: 20px;
+
+  @media (max-width: $sm) {
+    margin-bottom: 6px;
+  }
+}

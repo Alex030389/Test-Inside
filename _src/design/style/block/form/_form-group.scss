@@ -1,0 +1,31 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+
+  &_checkbox {
+    flex-direction: row;
+  }
+
+  &_btn {
+    padding-top: 35px;
+
+    @media (max-width: $sm) {
+      padding-top: 15px;
+    }
+  }
+}
+
+.form-group__box-input-code {
+  position: relative;
+}
+
+.form-group__code-img {
+  position: absolute;
+  top: 50%;
+  right: 2px;
+  z-index: 100;
+
+  width: 130px;
+
+  transform: translateY(-50%);
+}

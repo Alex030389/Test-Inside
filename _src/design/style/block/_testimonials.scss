@@ -1,0 +1,92 @@
+.testimonials {
+}
+
+.testimonials__list {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.testimonials__item {
+  display: flex !important;
+  padding: 0 30px;
+
+  @media (max-width: $sm) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.testimonials__box-ava {
+  position: relative;
+  top: 4px;
+
+  flex-shrink: 0;
+  width: 72px;
+  height: 72px;
+  overflow: hidden;
+
+  border-radius: 50%;
+}
+.testimonials__content {
+  padding-left: 26px;
+
+  @media (max-width: $sm) {
+    padding-left: 0;
+  }
+}
+
+.testimonials__name {
+  margin-bottom: 6px;
+
+  font-weight: 500;
+  font-size: 24px;
+  color: $c-blue-dark;
+
+  @media (max-width: $sm) {
+    text-align: center;
+  }
+}
+
+.testimonials__p {
+  font-size: 20px;
+}
+
+.testimonials {
+  .slick-slide {
+    margin-bottom: 14px;
+  }
+
+  .slick-dots {
+    @extend .list-reset;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .slick-dots li {
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+
+  .slick-dots button {
+    @extend .btn-reset;
+
+    width: 12px;
+    height: 12px;
+
+    font-size: 0;
+
+    background-color: $c-blue-lite;
+    border-radius: 50%;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .slick-active button {
+    background-color: $c-blue;
+  }
+}

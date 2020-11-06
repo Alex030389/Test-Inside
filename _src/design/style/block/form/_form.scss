@@ -1,0 +1,22 @@
+.form {
+}
+
+.form__row {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% + 20px);
+  margin: 0 -10px -20px;
+}
+
+.form__col {
+  width: $col-1;
+  padding: 0 10px 20px;
+
+  &_2 {
+    width: $col-2;
+
+    @media (max-width: $sm) {
+      width: $col-1;
+    }
+  }
+}

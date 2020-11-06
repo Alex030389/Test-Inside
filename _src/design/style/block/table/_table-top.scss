@@ -1,0 +1,27 @@
+.table-top {
+  thead {
+  }
+
+  tbody {
+  }
+
+  th,
+  td {
+    &:nth-child(1) {
+      width: 200px;
+
+      @media (max-width: $sm) {
+        width: 25%;
+      }
+    }
+    &:nth-child(2) {
+    }
+    &:nth-child(3) {
+      width: 100px;
+
+      @media (max-width: $sm) {
+        width: 70px;
+      }
+    }
+  }
+}

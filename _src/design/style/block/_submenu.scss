@@ -1,0 +1,32 @@
+.submenu {
+  min-width: 700px;
+  padding: 20px;
+
+  column-count: 3;
+  column-fill: balance;
+  column-gap: 20px;
+
+  background-color: #54748d;
+  border: 5px solid #e0ef7b;
+
+  &__item {
+    padding-bottom: 8px;
+  }
+
+  &__link {
+    font-size: 20px;
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    @media (max-width: $xl) {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: $lg) {
+  }
+}

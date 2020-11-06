@@ -1,0 +1,131 @@
+@@include('block/head.html')
+@@include('block/header/header.html')
+
+<main class="main">
+  <!-- ////////////////////////////////////////////////////////// agitation -->
+
+  <section class="agitation section">
+    <div class="agitation__container container">
+      <div class="agitation__box-title">
+        <h1 class="agitation__title title">Pass Your Certification Exams with Test-Inside</h1>
+        <p class="agitation__subtitle">The Only Cert Prep Materials You Will Ever Need!</p>
+      </div>
+      <ul class="benefits list-reset">
+        <li class="benefits__item benefits__item_col_3 box-style">
+          5 Years experience with Almost 50,000 Satisified Customers
+        </li>
+        <li class="benefits__item benefits__item_col_3 box-style">
+          Free updates: To ensure that you always get most updated questions, we provide 90 days of updates absolutely free!
+        </li>
+        <li class="benefits__item benefits__item_col_3 box-style">
+          Instant download after purchase, with 24/7 Customer Support.
+        </li>
+        <li class="benefits__item benefits__item_col_2 box-style">
+          Questions & Answers are based on real exam questions, formatted questions and accurate answers provided by experts!
+        </li>
+        <li class="benefits__item benefits__item_col_2 box-style">
+          Real exam environment testing engine, covers drag and drop, simulations, type in questions - train yourself for the real exam!
+        </li>
+      </ul>
+    </div><!--/container-->
+  </section>
+
+  <!-- ////////////////////////////////////////////////////////// how it works -->
+  <section class="how-it-works section section_lite_grey">
+    <div class="container">
+      <h2 class="title-2 title-2_mb_lg">How it works?</h2>
+      <ul class="how-it-works__list list-reset">
+        <li class="how-it-works__item how-it-works__item_1">Find your IT exam</li>
+        <li class="how-it-works__item how-it-works__item_2">You can test drive it by downloading a demo of your IT exam</li>
+        <li class="how-it-works__item how-it-works__item_3">Pass your test!</li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- ////////////////////////////////////////////////////////// find exam -->
+  <section class="find-exam section section_lite_blue">
+    <div class="find-exam__container container">
+      <h2 class="title-2 title-2_mb_lg">Find your IT exam free demo</h2>
+      <form class="find-exam__form" action="#">
+        <div class="find-exam__form-group form-group">
+          <select class="form-control" name="vendor" data-lib="selectric">
+            <option value="" disabled selected>Select a vendor...</option>
+            <option value="two">two</option>
+            <option value="three">three</option>
+            <option value="three">four</option>
+          </select>
+        </div>
+        <div class="find-exam__form-group form-group">
+          <select class="form-control" name="vendor" data-lib="selectric">
+            <option value="" disabled selected>Select a vendor...</option>
+            <option value="two">two</option>
+            <option value="three">three</option>
+            <option value="three">four</option>
+          </select>
+        </div>
+        <div class="find-exam__form-group form-group">
+          <input class="find-exam__form-control form-control" type="text" placeholder="Enter your email Address">
+        </div>
+        <div class="find-exam__form-group form-group">
+          <button class="btn btn_primary btn_lg">Download Demo</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ////////////////////////////////////////////////////////// top -->
+  <section class="top section">    
+    <div class="top__container container">
+      <div class="top__col">
+        <h2 class="title-2 title-2_mb_sm">Top Certifications</h2>
+        <table class="table-top table">
+          <thead>
+            <tr>
+              <th>Vendor</th>
+              <th>Certifications</th>
+              <th>Rank</th>
+            </tr>
+          </thead>
+          <tbody>
+            @@for (var i = 0; i < 7; i++) {
+              <tr>
+                <td><a class="link" href="#">CompTIA</a></td>
+                <td><a class="link link_fw_500" href="#">CompTIA Security+</a></td>
+                <td>5</td>
+              </tr>
+            }            
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="top__col">
+        <h2 class="title-2 title-2_mb_sm">Top Exams</h2>
+        <table class="table-top table">
+          <thead>
+            <tr>
+              <th>Vendor</th>
+              <th>Certifications</th>
+              <th>Rank</th>
+            </tr>
+          </thead>
+          <tbody>
+            @@for (var i = 0; i < 7; i++) {
+              <tr>
+                <td><a class="link" href="#">CompTIA</a></td>
+                <td><a class="link link_fw_500" href="#">AWS Certified Solutions Architect - Associate</a></td>
+                <td>5</td>
+              </tr>
+            }            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  @@include('block/our-clients.html')
+  
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

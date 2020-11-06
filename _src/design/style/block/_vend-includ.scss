@@ -1,0 +1,30 @@
+.vend-includ {
+  &__list {
+    column-count: 6;
+    column-gap: 30px;
+
+    @media (max-width: $xl) {
+      column-count: 5;
+    }
+
+    @media (max-width: $lg) {
+      column-count: 4;
+    }
+
+    @media (max-width: $md) {
+      column-count: 3;
+    }
+
+    @media (max-width: $sm) {
+      column-count: 2;
+    }
+  }
+
+  &__item {
+    margin-bottom: 10px;
+  }
+
+  &__link {
+    font-size: 20px;
+  }
+}

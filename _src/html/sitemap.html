@@ -1,0 +1,32 @@
+@@include('block/head.html')
+@@include('block/header/header.html')
+
+<main class="main">
+  @@include('block/breadcrumb.html')
+  <!-- //////////////////////////////////////////////////// sitemap -->
+  <section class="sitemap license section">
+    <div class="container">
+      <h1 class="title title_mb_md">Test-Inside Sitemap</h1>
+      <ul class="sitemap__list list-reset">
+        @@for (var i = 0; i < 50; i++) {
+          <li class="sitemap__item"><a class="link" href="#">010-001</a></li>
+          <li class="sitemap__item"><a class="link" href="#">156-115.77</a></li>
+          <li class="sitemap__item"><a class="link" href="#">3V0-624</a></li>
+          <li class="sitemap__item"><a class="link" href="#">5V0-31.19</a></li>
+          <li class="sitemap__item"><a class="link" href="#">AdWords Fundamentals</a></li>
+          <li class="sitemap__item"><a class="link" href="#">AND-402</a></li>
+          <li class="sitemap__item"><a class="link" href="#">C1000-004</a></li>
+          <li class="sitemap__item"><a class="link" href="#">BETA-Developer-001</a></li>
+          <li class="sitemap__item"><a class="link" href="#">AWS Certified Solutions Architect - Associate SAA-C02</a></li>
+          <li class="sitemap__item"><a class="link" href="#">C5050-062</a></li>
+          <li class="sitemap__item"><a class="link" href="#">C9550-413</a></li>
+          <li class="sitemap__item"><a class="link" href="#">CAPM</a></li>
+        }
+      </ul>
+
+    </div><!--/container-->
+  </section>
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/scripts.html')

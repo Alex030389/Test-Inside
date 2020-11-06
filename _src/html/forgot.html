@@ -1,0 +1,42 @@
+@@include('block/head.html')
+@@include('block/header/header.html')
+
+<main class="main">
+
+  @@include('block/breadcrumb.html')
+  <!-- //////////////////////////////////////////////////// register -->
+  <section class="register section">
+    <div class="container container_narrow">
+      <h1 class="visually-hidden">Open a free Testinside account now!</h1>
+      <div class="register__inner">
+        <div class="register__row row">
+          <div class="register__col register__col_center  col">
+            <h1 class="title-2 title-2_fz_sm title-2_mb_sm">Forgot Your Password?</h1>
+            <form class="form" action="#">
+              <p>Enter the e-mail address associated with your account. Click submit to have your password e-mailed to you:</p>
+              <div class="register__form-group form-group">
+                <label class="form-label" for="address">Email Address</label>
+                <input class="form-control" id="address" name="address" type="text">
+              </div>           
+              <div class="register__wrap-btn">
+                <button class="btn btn_primary btn_lg btn_w_320">Send Password</button> 
+              </div>
+            </form>
+          </div>
+        </div><!--/register__row-->
+        <p class="register__bottom-text"><span class="text text_fw_500">NOTE:</span> To make sure that you can receive a reply from ActualTests, add the "test-inside.com" domain to your e-mail "safe list" or add email address <a class="link" href="mailto:support@test-inside.com">support@test-inside.com</a> to your address book.<br>
+        If you do not receive a response in your "inbox" within 5 minutes, check your "bulk mail" or "junk mail" folders.
+        </p>
+      </div><!--/register__inner-->
+    </div><!--/container-->
+  </section>
+
+  <!-- /////////////////////////////////////////////////////  -->
+  <!-- <section class="reviews section">
+
+  </section> -->
+  
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/scripts.html')

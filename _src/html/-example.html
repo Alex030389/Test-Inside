@@ -1,0 +1,24 @@
+@@include('block/head.html')
+@@include('block/header/header.html')
+
+<main class="main">
+
+  @@include('block/breadcrumb.html')
+
+  <div class="container">
+    <svg aria-hidden="true">
+      <use xlink:href="static/img/symbol/sprite.svg#close"></use>
+    </svg>
+    <div style="margin-bottom: 20px;">
+      <button class="btn">button</button>
+      <a class="btn" href="#">button</a>
+    </div>
+    <div>
+      <button class="link">link</button>
+      <a class="link" href="#">link</a>
+    </div>
+  </div><!--/container-->
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/scripts.html')

@@ -1,0 +1,38 @@
+.samples {
+}
+
+.samples__block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.samples__box-content {
+  width: 100%;
+  max-width: 700px;
+  margin-right: 40px;
+  @media (max-width: $lg) {
+    margin-right: 0;
+  }
+}
+
+.samples__list {
+  margin-bottom: 40px;
+}
+
+.samples__form {
+  padding: 30px;
+
+  background-color: $c-blue-lite;
+  @media (max-width: $lg) {
+    max-width: 100%;
+  }
+
+  @media (max-width: $sm) {
+    padding: 20px;
+  }
+}
+
+
+.samples__box-img {
+  flex-shrink: 0;
+}

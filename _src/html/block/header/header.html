@@ -1,0 +1,108 @@
+<header class="header">
+  <div class="container">
+    <div class="header__top">
+      <div class="header__box-m-btn">
+        <button class="header__m-btn btn" data-m-btn="open">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="./design/img/symbol/sprite.svg#gumburger"></use>
+          </svg>
+        </button>
+        <button class="header__m-btn btn" data-m-btn="search">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="./design/img/symbol/sprite.svg#search"></use>
+          </svg>
+        </button>
+      </div>
+      <a class="header__logo" href="#">
+        <img src="./design/img/logo/logo.png" alt="logo">
+      </a>
+      <form class="header__search d-lg-none" action="#">
+        <input class="header__search-control form-control" type="text" placeholder="Select a vendor">
+        <button class="header__search-btn btn">Search</button>
+      </form>
+      <div class="header__sign-in" data-el="header__sign-in">
+        <a class="header__sign-in-link header__sign-in-link_green" href="#">Log In</a>
+        or
+        <a class="header__sign-in-link header__sign-in-link_blue" href="#">Register Now</a>
+      </div>
+      <div class="header__box-m-btn">
+        <a href="#" class="header__m-btn btn">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="./design/img/symbol/sprite.svg#cart"></use>
+          </svg>
+        </a>
+        <a href="#" class="header__m-btn btn">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="./design/img/symbol/sprite.svg#user"></use>
+          </svg>
+        </a>
+      </div>
+    </div><!--/header__top-->
+
+    <div class="header__m-search-wrap" data-el="m-search-wrap">
+      <div class="header__m-search">
+        <form class="header__search" action="#">
+          <input class="header__search-control form-control" type="text" placeholder="Select a vendor">
+          <button class="header__search-btn btn">Search</button>
+        </form>
+      </div>
+    </div>
+    
+    <nav class="header__nav" data-el="header__nav">
+      <button class="header__nav-btn btn" data-m-btn="close">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="./design/img/symbol/sprite.svg#close"></use>
+        </svg>
+      </button>
+
+        <ul class="header__menu menu list-reset">
+          <li class="header__menu-item menu__item">
+            <a class="header__menu-link header__menu-link_current menu__link" href="#">Home</a>
+          </li>
+          <li class="header__menu-item menu__item">
+            <a class="header__menu-link menu__link" href="#">Certification</a>
+            <ul class="header__submenu submenu list-reset">
+              @@for (var i = 0; i < 8; i++) {
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">11g</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">CISSP</a>
+                </li>
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">VCP6-DCV</a>
+                </li>
+              }
+            </ul>
+          </li>
+          <li class="header__menu-item menu__item">
+            <a class="header__menu-link menu__link" href="#">Demo</a>
+          </li>
+          <li class="header__menu-item menu__item">
+            <a class="header__menu-link menu__link" href="#">Bundle</a>
+          </li>
+          <li class="header__menu-item menu__item">
+            <a class="header__menu-link menu__link" href="#">FAQ</a>
+          </li>
+          <li class="header__menu-item menu__item">
+            <a class="header__menu-link menu__link" href="#">Carporate Account</a>
+          </li>
+          <li class="header__menu-item menu__item">
+            <a class="header__menu-link menu__link" href="#">Member Center</a>
+          </li>
+          <li class="header__menu-item menu__item">
+            <a class="header__menu-link menu__link" href="#">Shopping Cart</a>
+          </li>
+          <li class="header__menu-item menu__item">
+            <a class="header__menu-link menu__link" href="#">Contact Us</a>
+          </li>
+          <li class="header__menu-item menu__item">
+            <a class="header__menu-link menu__link" href="#">About Us</a>
+          </li>
+          <li class="header__menu-item menu__item">
+            <a class="header__menu-link menu__link" href="#">Site Map</a>
+          </li>
+        </ul>
+    </nav>
+  </div><!--/container-->
+</header>

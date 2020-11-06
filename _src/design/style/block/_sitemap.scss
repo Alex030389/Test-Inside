@@ -1,0 +1,23 @@
+.sitemap {
+}
+
+.sitemap__list {
+  column-count: 5;
+  column-gap: 30px;
+
+  @media (max-width: $xl) {
+    column-count: 4;
+  }
+
+  @media (max-width: $lg) {
+    column-count: 3;
+  }
+
+  @media (max-width: $md) {
+    column-count: 2;
+  }
+}
+
+.sitemap__item {
+  margin-bottom: 15px;
+}
