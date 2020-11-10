@@ -1,0 +1,71 @@
+@@include('block/head.html')
+@@include('block/header/header.html')
+
+<main class="main">
+  @@include('block/breadcrumb.html')
+  <!-- //////////////////////////////////////////////////// cart -->
+  <section class="cart section">
+    <div class="container">
+      <h1 class="title title-2_mb_sm">Review Your Order</h1>
+      <p class="cart__subtitle">The following items have been added to your shopping cart. Now, please enter your billing information below, as it appears on your credit card statement.<br>
+        <button class="link link_btn">Need help with your purchase?</button>
+      </p>
+
+      <table class="cart__table table">
+        <thead class="cart__table-thead">
+          <tr>
+            <th>Item Description</th>
+            <th>Qty</th>
+            <th>Price</th>
+            <th class="cart__th-remove"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="cart__td-exam">
+              <a href="#" class="link">Network Appliance NS0-159 Q & A</a>
+              <span class="cart__info">$9.00 Instant Discount</span>
+            </td>
+            <td class="cart__td-qty">
+              2
+            </td>
+            <td class="cart__td-price">$89.99</td>
+            <td class="cart__td-remove"><a class="cart__btn-remove btn btn_secondary" href="#">Remove</a></td>
+          </tr>
+          <tr>
+            <td class="cart__td-exam">
+              <a href="#" class="link">Network Appliance NS0-159 Q & A</a>
+              <span class="cart__info">$9.00 Instant Discount</span>
+            </td>
+            <td class="cart__td-qty">
+              1
+            </td>
+            <td class="cart__td-price">$89.99</td>
+            <td class="cart__td-remove"><a class="cart__btn-remove btn btn_secondary" href="#">Remove</a></td>
+          </tr>
+          <tr>
+            <td class="cart__td-exam">
+              <a href="#" class="link">Network Appliance NS0-159 Q & A</a>
+              <span class="cart__info">$9.00 Instant Discount</span>
+            </td>
+            <td class="cart__td-qty">
+              3
+            </td>
+            <td class="cart__td-price">$89.99</td>
+            <td class="cart__td-remove"><a class="cart__btn-remove btn btn_secondary" href="#">Remove</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    </div><!--/container-->
+  </section>
+
+  @@include('block/guarant-cert.html')
+  @@include('block/why-choose.html')
+  @@include('block/testimonials.html')
+  @@include('block/need-help.html')
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/scripts.html')

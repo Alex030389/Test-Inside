@@ -1,4 +1,4 @@
-const button = document.querySelectorAll('button');
+let button = document.querySelectorAll('button');
 if(button) {
   for(let i = 0; i < button.length; i++) {
     button[i].addEventListener('mouseup', function() {

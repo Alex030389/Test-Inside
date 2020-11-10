@@ -19,6 +19,10 @@ img {
   max-width: 100%;
 }
 
+button:active {
+  outline: none;
+}
+
 // form style
 ::-webkit-input-placeholder {
   color: inherit;

@@ -13,15 +13,19 @@
     text-decoration: none;
   }
 
+  &_blue {
+    color: $c-blue-dark;
+
+    background-image: linear-gradient(to right, $c-blue-dark 0, $c-blue-dark 100%);
+  }
+
   &_fw_500 {
     font-weight: 500;
   }
-}
 
-.link-btn {
-  @extend .btn-reset;
+  &_btn {
+    @extend .btn-reset;
 
-@extend .link;
-
-  line-height: 1.15;
+    line-height: 1.3;
+  }
 }

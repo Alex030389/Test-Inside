@@ -7,29 +7,23 @@
 }
 
 .license__col {
-  width: $col-3;
-  padding: 0 10px 20px;
+  width: $c-4;
+  margin-bottom: 30px;
+  padding: 20px;
 
   @media (max-width: $lg) {
-    width: $col-1;
+    width: $c-12;
   }
 
   &_large {
-    width: 100% - $col-3;
+    width: $c-8;
+
+    background-color: $c-blue-lite;
 
     @media (max-width: $lg) {
       order: -1;
-      width: $col-1;
+      width: $c-12;
     }
-  }
-}
-
-
-.license__box {
-  height: 100%;
-  padding: 20px;
-
-  &_large {
   }
 }
 
@@ -48,14 +42,8 @@
   }
 }
 
-.license__title-2 {
-}
-
 .license__btn {
   width: 100%;
   max-width: 320px;
   margin-left: auto;
-}
-
-.license__text {
 }

@@ -76,6 +76,44 @@
   }
 }
 
+.exam__contains-title {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.exam__contains-list {
+  margin-bottom: 30px;
+}
+
+.exam__contains-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+
+  &:nth-child(odd) {
+    background-color: $c-grey-lite;
+  }
+}
+
+.exam__contains-left {
+}
+
+.exam__contains-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.exam__contains-p-old {
+  font-size: 15px;
+  color: $c-red;
+}
+
+.exam__contains-p-new {
+  font-weight: 500;
+  color: $c-green;
+}
+
 // ////////////////////////
 .exam__purchase {
   width: $c-4;

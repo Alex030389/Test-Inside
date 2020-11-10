@@ -9,14 +9,14 @@
 }
 
 .form__col {
-  width: $col-1;
+  width: $c-12;
   padding: 0 10px 20px;
 
   &_2 {
-    width: $col-2;
+    width: $c-6;
 
     @media (max-width: $sm) {
-      width: $col-1;
+      width: $c-12;
     }
   }
 }

@@ -1,0 +1,14 @@
+.not-found {
+}
+
+.not-found__list {
+  font-size: 18px;
+}
+
+.not-found__item {
+  padding: 8px 16px;
+
+  &:nth-child(odd) {
+    background-color: $c-grey-lite;
+  }
+}

@@ -1,0 +1,116 @@
+@@include('block/head.html')
+@@include('block/header/header.html')
+
+<main class="main">
+  @@include('block/breadcrumb.html')
+  <!-- //////////////////////////////////////////////////// cart -->
+  <section class="cart section">
+    <div class="container">
+      <h1 class="title title-2_mb_sm">Review Your Order</h1>
+      <p class="cart__subtitle">The following items have been added to your shopping cart. Now, please enter your billing information below, as it appears on your credit card statement.<br>
+        <button class="link link_btn">Need help with your purchase?</button>
+      </p>
+      <table class="cart__table table">
+        <thead class="cart__table-thead">
+          <tr>
+            <th>Item Description</th>
+            <th>Qty</th>
+            <th>Price</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="cart__td-exam">
+              <a href="#" class="link link_fw_500">Network Appliance NS0-159 Q & A</a>
+              <span class="cart__info">$9.00 Instant Discount</span>
+            </td>
+            <td class="cart__td-qty">
+              <div class="cart__select-qty">
+                <select class="form-control form-control_border" name="qty" id="" data-lib="selectric">
+                  <option value="1-2">1-2 Computer</option>
+                  <option value="3">3 Computer</option>
+                  <option value="4">4 Computer</option>
+                  <option value="5">5 Computer</option>
+                </select>
+              </div>
+            </td>
+            <td class="cart__td-price">$89.99</td>
+            <td class="cart__td-remove"><a class="cart__btn-remove btn btn_secondary" href="#">Remove</a></td>
+          </tr>
+          <tr>
+            <td class="cart__td-exam">
+              <a href="#" class="link link_fw_500">Network Appliance NS0-159 Q & A</a>
+              <span class="cart__info">$9.00 Instant Discount</span>
+            </td>
+            <td class="cart__td-qty">
+              1
+            </td>
+            <td class="cart__td-price">$89.99</td>
+            <td class="cart__td-remove"><a class="cart__btn-remove btn btn_secondary" href="#">Remove</a></td>
+          </tr>
+          <tr>
+            <td class="cart__td-exam">
+              <a href="#" class="link link_fw_500">Network Appliance NS0-159 Q & A</a>
+              <span class="cart__info">$9.00 Instant Discount</span>
+            </td>
+            <td class="cart__td-qty">
+              <div class="cart__select-qty">
+                <select class="form-control form-control_border" name="qty" id="" data-lib="selectric">
+                  <option value="1-2">1-2 Computer</option>
+                  <option value="3">3 Computer</option>
+                  <option value="4">4 Computer</option>
+                  <option value="5">5 Computer</option>
+                </select>
+              </div>
+            </td>
+            <td class="cart__td-price">$89.99</td>
+            <td class="cart__td-remove"><a class="cart__btn-remove btn btn_secondary" href="#">Remove</a></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="cart__td-promo" colspan="4">
+              <div class="cart__promo promo">
+                <div class="promo__info">Promotion code 'ваыв' that you entered is incorrect.   </div>
+                <form class="promo__form form" action="#">
+                  <div class="promo__form-group form-group">
+                    <label class="promo__form-label form-label" for="promo">Promotion Code:</label>
+                    <input class="promo__form-control form-control" id="promo" type="text">
+                  </div>
+                  <button class="promo__btn btn btn_primary">Apply</button>
+                </form>
+              </div><!--/promo-->
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4" class="cart__td-total">
+              <span class="cart__total">Total $394.95</span>              
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <div class="cart__pay">
+        <div>
+          <span class="cart__pay-title">Pay with Credit Card or Debit Card</span>
+          <form action="#">
+            <button class="cart__pay-btn btn btn_primary">Pay with Card</button>
+          </form>
+        </div>
+        <p class="cart__pay-note"><span class="text text_fw_500">Note:</span> The charges on your Credit/Debit Card Statement will appear as paid to 'Training Solutions Ltd' - our partner in accepting payments.</p>
+      </div>
+      
+     
+
+    </div><!--/container-->
+  </section>
+
+  @@include('block/guarant-cert.html')
+  @@include('block/why-choose.html')
+  @@include('block/testimonials.html')
+  @@include('block/need-help.html')
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/scripts.html')

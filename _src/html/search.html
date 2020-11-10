@@ -1,0 +1,28 @@
+@@include('block/head.html')
+@@include('block/header/header.html')
+
+<main class="main">
+  @@include('block/breadcrumb.html')
+  <!-- //////////////////////////////////////////////////// not-found -->
+  <section class="not-found license section">
+    <div class="container container_narrow">
+      <h1 class="title title_mb_md">Search results for "test fraze"</h1>
+      <ul class="non-found__list list-reset">
+        @@for (var i = 0; i < 3; i++) {
+          <li class="not-found__item">
+              <a class="link link_fw_500" href="#">020-222</a> - ACSM Certified Health Fitness Specialist
+          </li>
+          <li class="not-found__item">
+              <a class="link link_fw_500" href="#">020-222</a> - MetaFrame Presentation Server with Feature Release 3
+          </li>
+          <li class="not-found__item">
+              <a class="link link_fw_500" href="#">020-222</a> - HCNP-R&S-IESNÂ (Huawei Certified Network Professional-Implementing Enterprise Switching Network)
+          </li>
+        }
+      </ul>
+    </div><!--/container-->
+  </section>
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/scripts.html')

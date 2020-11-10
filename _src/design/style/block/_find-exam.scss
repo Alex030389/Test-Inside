@@ -12,14 +12,14 @@
 }
 
 .find-exam__form-group {
-  width: $col-4;
+  width: 25%;
   padding: 0 10px 20px;
 
   @media (max-width: $lg) {
-    width: $col-2;
+    width: 50%;
   }
 
   @media (max-width: $sm) {
-    width: $col-1;
+    width: 100%;
   }
 }
