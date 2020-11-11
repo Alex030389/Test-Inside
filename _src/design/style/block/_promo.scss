@@ -1,7 +1,7 @@
 .promo {
-  width: 640px;
+  width: 450px;
 
-  @media (max-width: $md) {
+  @media (max-width: $sm) {
     width: 100%;
   }
 }
@@ -19,17 +19,18 @@
 
   background-color: $c-blue-lite;
 
-  @media (max-width: $md) {
+  @media (max-width: $sm) {
     flex-direction: column;
     align-items: flex-start;
   }
 }
 
 .promo__form-group {
+  flex-grow: 1;
   flex-direction: row;
   align-items: center;
 
-  @media (max-width: $md) {
+  @media (max-width: $sm) {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
@@ -37,18 +38,11 @@
   }
 }
 
-.promo__form-label {
-  width: 200px;
-
-  @media (max-width: $md) {
-    width: auto;
-  }
-}
 
 .promo__form-control {
   margin-right: 30px;
 
-  @media (max-width: $md) {
+  @media (max-width: $sm) {
     margin-right: 0;
   }
 }

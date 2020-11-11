@@ -32,10 +32,6 @@
 
       filter: grayscale(30%);
     }
-
-    @media (max-width: $sm) {
-      background-color: $c-blue;
-    }
   }
 
   &_secondary {

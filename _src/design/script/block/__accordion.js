@@ -1,3 +1,5 @@
-$('.mod-need-help__list').on('click', '.mod-need-help__btn', function() {
-  $(this).next().slideToggle();
+$('[data-js="m-help__header"]').on('click', function() {
+  $(this)
+    .toggleClass('m-help__header_open')
+    .next().slideToggle(200);
 });

@@ -1,0 +1,112 @@
+@@include('block/head.html')
+@@include('block/header/header.html')
+
+<main class="main">
+  @@include('block/breadcrumb.html')
+
+  <!-- ///////////////////////////////////////////////////// thanks -->
+  <section class="thanks section">
+    <div class="container">
+      <h1 class="title title_mb_md">Thank you, purchase complete</h1>
+      <div class="thanks__row row">
+        <div class="thanks__col-text col">
+          <p>Your Purchase was successful.</p>
+          <p>Please <a href="#" class="link">Log In</a> to your account to <a href="#" class="link">access your purchases</a> or <a href="#" class="link">print a receipt</a> in your User Center.</p>
+          <p>If you didn't have an account with test-inside.com before then it was created automatically, password of the account was emailed to .</p>
+          <p>A receipt for this purchase has been emailed to . You can also print a receipt in the Member's Account.</p>
+          <p>Please feel free to <a href="#" class="link">email us</a> to check your status. Thanks for your understanding.</p>
+        </div>
+        <div class="thanks__col-form col">
+          <form class="thanks__form" action="#">
+            <h2 class="thanks__form-title">Sign In</h2>
+            <p class="thanks__form-subtitle">(to download your purchase or print a receipt)</p>
+            <div class="thanks__form-group form-group">
+              <label class="form-label" for="email">Your Email Address:</label>
+              <input class="form-control" id="email" name="email" type="text">
+            </div>
+            <div class="thanks__form-group form-group">
+              <label class="form-label" for="password">Password:</label>
+              <input class="form-control" id="password" type="text">
+            </div>
+            <div class="thanks__form-box-btn form-group form-group_btn-col">
+              <button class="thanks__form-btn btn btn_primary btn_lg btn_w_320">Sign In</button>
+              <a class="link link_blue" href="#">Forgot your password?</a>
+            </div>
+          </form>
+        </div>
+      </div><!--/thanks__col-->
+    </div><!--/container-->
+  </section>
+
+  <!-- //////////////////////////////////////////////////// cart -->
+  <section class="cart section section_lite_grey">
+    <div class="container">
+      <h2 class="title-2 title-2_mb_md">Your Order Summary</h2>
+      <table class="cart__table table">
+        <thead class="cart__table-thead">
+          <tr>
+            <th>Product</th>
+            <th>Qty</th>
+            <th>Subtotal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="cart__td-exam">
+              <a href="#" class="link link_fw_500">Network Appliance NS0-159</a>
+              <span class="cart__info">Q&A</span>
+            </td>
+            <td class="cart__td-qty">
+              2
+            </td>
+            <td class="cart__td-price">$89.99</td>
+          </tr>
+          <tr>
+            <td class="cart__td-exam">
+              <a href="#" class="link link_fw_500">Network Appliance NS0-159</a>
+              <span class="cart__info">Q&A</span>
+            </td>
+            <td class="cart__td-qty">
+              2
+            </td>
+            <td class="cart__td-price">$89.99</td>
+          </tr>
+          <tr>
+            <td class="cart__td-exam">
+              <a href="#" class="link link_fw_500">Network Appliance NS0-159</a>
+              <span class="cart__info">Q&A</span>
+            </td>
+            <td class="cart__td-qty">
+              2
+            </td>
+            <td class="cart__td-price">$89.99</td>
+          </tr>
+          <tr>
+            <td class="cart__td-exam">
+              <a href="#" class="link link_fw_500">Network Appliance NS0-159</a>
+              <span class="cart__info">Q&A</span>
+            </td>
+            <td class="cart__td-qty">
+              2
+            </td>
+            <td class="cart__td-price">$89.99</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3" class="cart__td-total">
+              <span class="cart__total">Total $394.95</span>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <!--/container-->
+  </section>
+
+
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

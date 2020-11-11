@@ -1,0 +1,85 @@
+@@include('block/head.html')
+@@include('block/header/header-2.html')
+
+<main class="main">
+  @@include('block/breadcrumb.html')
+  <!-- //////////////////////////////////////////////////// paynow -->
+  <section class="cart section">
+    <div class="container">
+      <h1 class="title title-2_mb_lg">Your Product List</h1>
+      <table class="cart__table table">
+        <thead class="cart__table-thead">
+          <tr>
+            <th>Item Description</th>
+            <th>Qty</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="cart__td-exam">
+              <a href="#" class="link link_fw_500">NS0-159</a>
+              <span class="cart__info">NetApp Certified Data Administrator (NCDA)</span>
+            </td>
+            <td class="cart__td-qty">
+              2
+            </td>
+            <td class="cart__td-price">$89.99</td>
+          </tr>
+          <tr>
+            <td class="cart__td-exam">
+              <a href="#" class="link link_fw_500">NS0-159</a>
+              <span class="cart__info">NetApp Certified Data Administrator (NCDA)</span>
+            </td>
+            <td class="cart__td-qty">
+              2
+            </td>
+            <td class="cart__td-price">$89.99</td>
+          </tr>
+          <tr>
+            <td class="cart__td-exam">
+              <a href="#" class="link link_fw_500">NS0-159</a>
+              <span class="cart__info">NetApp Certified Data Administrator (NCDA)</span>
+            </td>
+            <td class="cart__td-qty">
+              2
+            </td>
+            <td class="cart__td-price">$89.99</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3" class="cart__td-total">
+              <span class="cart__total">Total $394.95</span>              
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div><!--/container-->    
+  </section>
+
+  <section class="paynow section section_lite_grey">
+    <div class="container">
+      <h2 class="title-2 title-2_mb_sm">There are several alternatives for completing your transaction:</h2>
+      <div class="paynow__step">
+        <h3 class="paynow__step-title">Step 1</h3>
+        <p>It is very important that you contact your bank to inform them that you are planning to make an online purchase from "Training Solutions Ltd" for $394.95, before trying any of the following options. Asking your bank to authorize your next transaction, with a simple phone call, typically resolves any online purchase problems. Please also ensure you are entering all of your details in correctly, before submitting.
+        </p>
+      </div>
+      <div class="paynow__step">
+        <h3 class="paynow__step-title">Step 2</h3>
+        <p><a class="link" href="#">Go to Payment Page and try your CC details again</a> Before trying your card again for payment it is highly recommended that you inform your bank that you are going to make an online purchase from "Training Solutions Ltd" for $394.95. Ask the bank to authorize the transaction as you are trying to make a purchase again. Make sure that you are filling all the information correctly.</p>
+      </div>
+      <div class="paynow__step">
+        <h3 class="paynow__step-title">Step 3</h3>
+        <p>If you are still encountering problems making a payment after contacting your bank, verifying your information, and attemping the above 4 options, then please contact out <a class="link" href="#">Payment Assistance Center</a> .</p>
+        <a class="paywnow__btn-assistance btn btn_secondary btn_lg" href="#">Payment Assistance</a>
+      </div>
+    </div><!--/container-->
+  </section>
+
+</main>
+
+@@include('block/footer/footer-2.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

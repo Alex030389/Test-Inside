@@ -25,6 +25,8 @@
 @import "block/form/form-group";
 @import "block/form/form-label";
 @import "block/form/form-control";
+@import "block/form/form-checkbox";
+@import "block/form/form-radion";
 
 @import "block/menu";
 @import "block/submenu";
@@ -59,13 +61,17 @@
 @import "block/not-found";
 @import "block/cart";
 @import "block/promo";
-
+@import "block/paynow";
+@import "block/thanks";
+@import "block/support";
 
 @import "block/footer/footer";
 @import "block/up";
 
 // ///////////////////////////////////////// modal block
 @import "block/modal/modal";
+@import "block/modal/m-discount";
+@import "block/modal/m-help";
 
 // ///////////////////////////////////////// display
 @import "base/display";

@@ -21,6 +21,10 @@
   &_code {
     padding-right: 150px;
   }
+
+  &_border {
+    border: 1px solid $c-main-lite;
+  }
 }
 
 .selectric {

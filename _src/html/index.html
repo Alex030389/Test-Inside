@@ -2,12 +2,12 @@
 
 <div class="container">
   <h1>Test-Inside</h1>
-  <!-- <hr> -->
-  <!-- <h2>Modals</h2>
-  <button style="margin: 8px" data-btn="modal" data-mfp-src="#modal-1">Start-1</button>
-  <button style="margin: 8px" data-btn="modal" data-mfp-src="#modal-1">Start-2</button>
-  <button style="margin: 8px" data-btn="modal" data-mfp-src="#modal-1">Try Free demo</button>
-  <button style="margin: 8px" data-btn="modal" data-mfp-src="#modal-1">Need help?</button> -->
+  <hr>
+  <h2>Modals</h2>
+  <button style="margin: 8px" data-btn="modal" data-mfp-src="#discount">discount</button>
+  <button style="margin: 8px" data-btn="modal" data-mfp-src="#discount-2">discount-2</button>
+  <button style="margin: 8px" data-btn="modal" data-mfp-src="#free-demo">free demo</button>
+  <button style="margin: 8px" data-btn="modal" data-mfp-src="#need-help">need help?</button>
   <hr>
 
   <h2>Pages</h2><!------------------------------------------->
@@ -67,17 +67,26 @@
   <!------------------------------------------->
   <h2>Pay</h2>
   <ol>
-    <!-- <li>
+    <li>
       <a href="checkout.html">checkout</a>
-    </li> -->
+    </li>
     <li>
       <a href="cart.html">cart</a>
+    </li>
+    <li>
+      <a href="paynow.html">paynow</a>
+    </li>
+    <li>
+      <a href="thanks.html">thanks</a>
+    </li>
+    <li>
+      <a href="support.html">support</a>
     </li>
   </ol>
   <hr>
 
   <!------------------------------------------->
-  <!-- <h2>USER ACCOUNT</h2>
+  <h2>User account</h2>
   <ol>
     <li>
       <a href="user-products.html">my products</a>
@@ -92,8 +101,10 @@
       <a href="invoice.html">invoice</a>
     </li>
   </ol>
-  <hr> -->
 </div>
 
-@@include('block/modal/modal-1.html')
+@@include('block/modal/discount.html')
+@@include('block/modal/discount-2.html')
+@@include('block/modal/free-demo.html')
+@@include('block/modal/need-help.html')
 @@include('block/scripts.html')

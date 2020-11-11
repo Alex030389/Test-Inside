@@ -1,0 +1,146 @@
+@@include('block/head.html')
+@@include('block/header/header.html')
+
+<main class="main">
+  @@include('block/breadcrumb.html')
+  <!-- //////////////////////////////////////////////////// cart -->
+  <section class="cart section">
+    <div class="container">
+      <h1 class="title title-2_mb_lg">Shopping cart summary</h1>
+      <table class="cart__table table">
+        <thead class="cart__table-thead">
+          <tr>
+            <th>Your Product List</th>
+            <th>Qty</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="cart__td-exam">
+              <a href="#" class="link link_fw_500">NS0-159</a>
+              <span class="cart__info">NetApp Certified Data Administrator (NCDA)</span>
+            </td>
+            <td class="cart__td-qty">
+              2
+            </td>
+            <td class="cart__td-price">$89.99</td>
+          </tr>
+          <tr>
+            <td class="cart__td-exam">
+              <a href="#" class="link link_fw_500">NS0-159</a>
+              <span class="cart__info">NetApp Certified Data Administrator (NCDA)</span>
+            </td>
+            <td class="cart__td-qty">
+              2
+            </td>
+            <td class="cart__td-price">$89.99</td>
+          </tr>
+          <tr>
+            <td class="cart__td-exam">
+              <a href="#" class="link link_fw_500">NS0-159</a>
+              <span class="cart__info">NetApp Certified Data Administrator (NCDA)</span>
+            </td>
+            <td class="cart__td-qty">
+              2
+            </td>
+            <td class="cart__td-price">$89.99</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3" class="cart__td-total">
+              <span class="cart__total">Total $394.95</span>              
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div><!--/container-->
+  </section>
+  
+  <!-- /////////////////////////////////////////////////// support -->
+  <section class="support section section_lite_blue">
+    <h2 class="title-2 title-2_mb_sm">Online support</h2>
+    <div class="container container_narrow">
+      <form action="#">
+        <p class="text text_fw_500">We apologize if you are facing any difficulty in making payment. Please provide us some quick information asked in the form below so that we can quickly locate an alternate payment solution for you</p>
+        <ol class="support__list">
+          <li class="support__item">
+            <p>Have you already contacted your bank informing them of you intent to make Online purchase for the amount of $394.95 from Test-inside.com?</p>
+            <div class="support__box-radio">
+              <div class="form-group form-group_checkbox">
+                <input class="form-radio" type="radio" id="radio-1" name="support__radio">
+                <label for="radio-1">Yes</label>
+              </div>
+              <div class="form-group form-group_checkbox">
+                <input class="form-radio" type="radio" id="radio-2" name="support__radio">
+                <label for="radio-2">No</label>
+              </div>
+            </div>
+          </li>
+          <li class="support__item">
+            <p>What options have you already tried to finalize your purchase and process the payment?</p>
+            <div class="form-group form-group_checkbox">
+              <input class="form-checkbox" id="checkbox-1" type="checkbox">
+              <label class="form-label" for="checkbox-1">I have tried making a payment using Paypal. (Option 1)</label>                             
+            </div>
+            <div class="form-group form-group_checkbox">
+              <input class="form-checkbox" id="checkbox-2" type="checkbox">
+              <label class="form-label" for="checkbox-2">I have tried submitting my information again correctly entering all my credit card payment information. (Option 2)</label>                             
+            </div>
+            <div class="form-group form-group_checkbox">
+              <input class="form-checkbox" id="checkbox-3" type="checkbox">
+              <label class="form-label" for="checkbox-3">I have tried making a payment through a Moneybookers. (Option 3)</label>                             
+            </div>
+          </li>
+          <li class="support__item">
+            <p>Have you tried any of the additional payment methods?</p>
+            <div class="form-group form-group_checkbox">
+              <input class="form-checkbox" id="checkbox-4" type="checkbox">
+              <label class="form-label" for="checkbox-4">I have tried making a payment using Western Union.</label>                             
+            </div>
+          </li>
+          <li class="support__item">
+            <p>How would you prefer we contact you?</p>
+            <div class="form__row">
+              <div class="form__col form__col_2 form-group">
+                <label class="form-label" for="name">Your Name *</label>
+                <input class="form-control" id="name" name="name" type="text">
+              </div>
+              <div class="form__col form__col_2 form-group">
+                <label class="form-label" for="email">E-mail *</label>
+                <input class="form-control" id="email" name="email" type="text">
+              </div>
+              <div class="form__col form__col_2 form-group">
+                <label class="form-label" for="phone">Phone Number *</label>
+                <input class="form-control" id="phone" name="phone" type="text">
+              </div>
+              <div class="form__col form__col_2 form-group">
+                <label class="form-label" for="country">Country *</label>
+                <select class="form-control" data-lib="selectric" name="contry" id="country">
+                  <option value="" disabled selected hidden>Please Choose...</option>
+                  <option value="Licensing">Licensing</option>
+                  <option value="Reseller">Reseller</option>
+                  <option value="Affiliate">Affiliate</option>
+                  <option value="Multiple_Accounts">Multiple User Accounts</option>
+                </select>
+              </div>
+              <div class="form__col form__col_2 form-group">
+                <label class="form-label" for="details">Shopping cart details</label>
+                <input class="form-control" id="details" name="details" type="text">
+              </div>
+              <div class="form__col form-group">
+                <label class="form-label" for="problems">Payment Problems</label>
+                <textarea class="form-control form-control_textarea" id="problems" name="problems" rows="4"></textarea>
+              </div>
+            </div><!--/form__row-->
+          </li>
+        </ol>
+      </form>
+    </div>
+  </section>
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

@@ -50,6 +50,12 @@
 
 .testimonials__p {
   font-size: 20px;
+
+  @media (max-width: $sm) {
+    margin-bottom: 0;
+
+    font-size: 18px;
+  }
 }
 
 .testimonials {

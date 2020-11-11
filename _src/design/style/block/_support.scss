@@ -1,0 +1,19 @@
+.support {
+}
+
+.support__list {
+}
+
+.support__item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.support__box-radio {
+  display: flex;
+
+  .form-group:first-child {
+    margin-right: 30px;
+  }
+}

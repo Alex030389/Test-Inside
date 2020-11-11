@@ -16,6 +16,12 @@
   @media (max-width: $lg) {
     padding: 20px 0;
   }
+
+  &_checkout {
+    @media (max-width: $md) {
+      justify-content: space-around;
+    }
+  }
 }
 
 .header__box-m-btn {
