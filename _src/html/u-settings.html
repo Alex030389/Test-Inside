@@ -1,0 +1,63 @@
+@@include('block/head.html')
+@@include('block/header/header.html')
+
+<main class="main">
+  <!-- ////////////////////////////////////////////////////////// user -->
+
+  <div class="user section">
+    <div class="container">
+      <div class="user__box row">
+        @@include('block/user__nav.html')
+  
+        <div class="user__content col">
+          <h1 class="title title_sm title_mb_sm">Account Setting</h1>
+          <div class="u-settings">
+            <form action="#">
+              <h2 class="u-settings__title-2 title-2 title-2_fz_sm title-2_mb_sm">Email Notification</h2>
+
+              <div class="u-settings__box-form-group">
+                <div class="form-group form-group_checkbox">
+                  <input class="form-checkbox" id="checkbox-1" type="checkbox">
+                  <label class="form-label" for="checkbox-1">Include me on your IT mailing list</label>                             
+                </div>
+                <div class="form-group form-group_checkbox">
+                  <input class="form-checkbox" id="checkbox-2" type="checkbox">
+                  <label class="form-label" for="checkbox-2">I want to be notified when my products have been updated</label>                             
+                </div>
+                <div class="form-group form-group_checkbox">
+                  <input class="form-checkbox" id="checkbox-3" type="checkbox">
+                  <label class="form-label" for="checkbox-3">I want to receive special offers from Test-inside partners</label>                             
+                </div>
+              </div>
+
+              <h2 class="u-settings__title-2 title-2 title-2_fz_sm title-2_mb_sm">Email Address & Password</h2>
+              <p class="u-settings__current-email">Current Email Address: <span class="text text_fw_500">sam@testking.com</span></p>
+              <div class="form__row">
+                <div class="form__col form__col_2 form-group">
+                  <label class="form-label" for="email">New Email Address</label>
+                  <input class="form-control" id="email" name="email" type="text">
+                </div>
+                <div class="form__col form__col_2 form-group">
+                  <label class="form-label" for="password">New Password</label>
+                  <input class="form-control" id="password" name="passw" type="text">
+                </div>
+                <div class="form__col form__col_2 form-group">
+                  <label class="form-label" for="password-2">Confirm Password</label>
+                  <input class="form-control" id="password-2" name="passw-2" type="text">
+                </div>
+                <div class="form__col form__col_2 form-group form-group_btn">
+                  <button class="btn btn_primary btn_lg">Save Settings</button>
+                </div>
+              </div>
+            </form>
+          </div><!--/u-settings-->
+        </div><!--/user__content-->
+      </div>
+    </div><!--/container-->
+  </div><!--/user-->
+  
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

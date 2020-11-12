@@ -64,9 +64,9 @@
     <div class="container container_narrow">
       <form action="#">
         <p class="text text_fw_500">We apologize if you are facing any difficulty in making payment. Please provide us some quick information asked in the form below so that we can quickly locate an alternate payment solution for you</p>
-        <ol class="support__list">
+        <ol class="support__list list-reset">
           <li class="support__item">
-            <p>Have you already contacted your bank informing them of you intent to make Online purchase for the amount of $394.95 from Test-inside.com?</p>
+            <p class="text text_fw_500">1. Have you already contacted your bank informing them of you intent to make Online purchase for the amount of $394.95 from Test-inside.com?</p>
             <div class="support__box-radio">
               <div class="form-group form-group_checkbox">
                 <input class="form-radio" type="radio" id="radio-1" name="support__radio">
@@ -79,7 +79,7 @@
             </div>
           </li>
           <li class="support__item">
-            <p>What options have you already tried to finalize your purchase and process the payment?</p>
+            <p class="text text_fw_500">2. What options have you already tried to finalize your purchase and process the payment?</p>
             <div class="form-group form-group_checkbox">
               <input class="form-checkbox" id="checkbox-1" type="checkbox">
               <label class="form-label" for="checkbox-1">I have tried making a payment using Paypal. (Option 1)</label>                             
@@ -94,14 +94,14 @@
             </div>
           </li>
           <li class="support__item">
-            <p>Have you tried any of the additional payment methods?</p>
+            <p class="text text_fw_500">3. Have you tried any of the additional payment methods?</p>
             <div class="form-group form-group_checkbox">
               <input class="form-checkbox" id="checkbox-4" type="checkbox">
               <label class="form-label" for="checkbox-4">I have tried making a payment using Western Union.</label>                             
             </div>
           </li>
           <li class="support__item">
-            <p>How would you prefer we contact you?</p>
+            <p class="text text_fw_500">4. How would you prefer we contact you?</p>
             <div class="form__row">
               <div class="form__col form__col_2 form-group">
                 <label class="form-label" for="name">Your Name *</label>
@@ -113,7 +113,7 @@
               </div>
               <div class="form__col form__col_2 form-group">
                 <label class="form-label" for="phone">Phone Number *</label>
-                <input class="form-control" id="phone" name="phone" type="text">
+                <input class="form-control form-control" id="phone" name="phone" type="text">
               </div>
               <div class="form__col form__col_2 form-group">
                 <label class="form-label" for="country">Country *</label>
@@ -133,11 +133,14 @@
                 <label class="form-label" for="problems">Payment Problems</label>
                 <textarea class="form-control form-control_textarea" id="problems" name="problems" rows="4"></textarea>
               </div>
+              <div class="form__col form-group form-group_btn-col">
+                <button class="btn btn_primary btn_lg btn_w_320">Send Request</button>
+              </div>
             </div><!--/form__row-->
           </li>
         </ol>
       </form>
-    </div>
+    </div><!--/container-->
   </section>
 </main>
 

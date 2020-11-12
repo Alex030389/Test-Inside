@@ -4,19 +4,6 @@
 .thanks__row {
 }
 
-.thanks__col-text {
-  width: $c-7;
-
-  @media (max-width: $lg) {
-    width: $c-6;
-  }
-
-  @media (max-width: $md) {
-    width: $c-12;
-    margin-bottom: 20px;
-  }
-}
-
 .thanks__col-form {
   width: $c-5;
 
@@ -26,6 +13,22 @@
 
   @media (max-width: $md) {
     width: $c-12;
+    margin-bottom: 30px;
+  }
+}
+
+.thanks__col-text {
+  width: $c-7;
+  padding-left: 50px;
+
+  @media (max-width: $lg) {
+    width: $c-6;
+    padding-left: 0;
+  }
+
+  @media (max-width: $md) {
+    width: $c-12;
+    margin-bottom: 20px;
   }
 }
 

@@ -1,0 +1,91 @@
+@@include('block/head.html')
+@@include('block/header/header.html')
+
+<main class="main">
+  <div class="user section">
+    <div class="container">
+      <div class="user__box row">
+        @@include('block/user__nav.html')
+        
+        <!-- /////////////////////////////////////////////// u-products -->
+        <div class="user__content col">
+          <h1 class="visually-hidden">My Products</h1>
+          <h2 class="title-2 title-2_mb_sm">Current Products</h2>
+          <table class="u-products table">
+            <thead class="u-products__thead">
+              <tr>
+                <th class="u-products__td-description">Product Description</th>
+                <th class="u-products__td-invoice">Invoice #</th>
+                <th class="u-products__td-order">Order Date</th>
+                <th class="u-products__td-expirat">Expiration Date</th>
+                <th class="u-products__td-download">Download Extend</th>
+              </tr>
+            </thead>
+            <tbody>
+              @@for(var i = 0; i < 4; i++) {
+                <tr class="u-products__tr">
+                  <td class="u-products__td-description">
+                    <div class="text text_fw_500">1. Microsoft 70-743 Questions & Answers</div>
+                    <div>
+                      <span>Authorization Code:</span>&nbsp;&nbsp; <span class="u-products__code">2110-F72D-B4B0-728F</span>
+                    </div>
+                    <form action="#">
+                      <span>Authorization Code #2:</span>&nbsp;&nbsp; <button class="u-products__btn-code btn btn_primary">Request Code</button>
+                    </form>
+                  </td>
+                  <td class="u-products__td-invoice">
+                    <span class="d-none d-md-inline">Invoice #:</span> <a class="link" href="#">#83289</a>
+                  </td>
+                  <td class="u-products__td-order">
+                    <span class="d-none d-md-inline">Order Date:</span> Nov 11,20</td>
+                  <td class="u-products__td-expirat">
+                    <span class="d-none d-md-inline">Expiration Date:</span> Feb 09,21</td>
+                  <td class="u-products__td-download">
+                    <a class="u-products__btn-download btn btn_secondary" href="#">Download</a>
+                  </td>
+                </tr>
+              }
+            </tbody>
+          </table>
+
+          <h2 class="title-2 title-2_mb_sm">Expired Products</h2>
+          <table class="u-product table">
+            <thead class="u-products__thead">
+              <tr>
+                <th class="u-products__td-description">Product Description</th>
+                <th class="u-products__td-invoice">Invoice #</th>
+                <th class="u-products__td-order">Order Date</th>
+                <th class="u-products__td-expirat">Expiration Date</th>
+                <th class="u-products__td-download">Download Extend</th>
+              </tr>
+            </thead>
+            <tbody>
+              @@for(var i = 0; i < 4; i++) {
+                <tr class="u-products__tr">
+                  <td class="u-products__td-description">
+                    <a class="link link_fw_500" href="#">1. Microsoft 70-743 Questions & Answers</a>
+                  </td>
+                  <td class="u-products__td-invoice">
+                    <span class="d-none d-md-inline">Invoice #:</span> <a class="link" href="#">#83289</a>
+                  </td>
+                  <td class="u-products__td-order">
+                    <span class="d-none d-md-inline">Order Date:</span> Nov 11,20</td>
+                  <td class="u-products__td-expirat">
+                    <span class="d-none d-md-inline">Expiration Date:</span> Feb 09,21</td>
+                  <td class="u-products__td-download">
+                    <a class="u-products__btn-download btn btn_secondary" href="#">Download</a>
+                  </td>
+                </tr>
+              }
+            </tbody>
+          </table>
+        </div><!--/user__content-->
+      </div>
+    </div><!--/container-->
+  </div><!--/user-->
+  
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

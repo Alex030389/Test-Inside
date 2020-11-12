@@ -1,0 +1,52 @@
+@@include('block/head.html')
+@@include('block/header/header.html')
+
+<main class="main">
+  <!-- ////////////////////////////////////////////////////////// user -->
+
+  <div class="user section">
+    <div class="container">
+      <div class="user__box row">
+        @@include('block/user__nav.html')
+        
+          <!-- /////////////////////////////////////////////// u-invoices -->
+          <div class="user__content col">
+            <h1 class="title-2 title-2_mb_sm">Orders / Invoices</h1>
+  
+            <table class="u-invoices table">
+              <thead class="u-invoices__thead">
+                <tr>
+                  <th class="u-invoices__td-description">Invoice / Order #</th>
+                  <th class="u-invoices__td-invoice">Order Date</th>
+                  <th class="u-invoices__td-order">Amount</th>
+                  <th class="u-invoices__td-btn"></th>
+                </tr>
+              </thead>
+              <tbody>
+                @@for(var i = 0; i < 4; i++) {
+                  <tr class="u-invoices__tr">
+                    <td class="u-invoices__td-description">
+                      <a class="link link_fw_500" href="#">83174</a>
+                    </td>
+                    <td class="u-invoices__td-invoice">
+                      <span class="d-none d-md-inline">Order Date:</span> Nov 11,20
+                    </td>
+                    <td class="u-invoices__td-order">
+                      <span class="d-none d-md-inline">Amount:</span> $25.99</td>
+                    <td class="u-invoices__td-btn">
+                      <button class="u-invoices__btn btn btn_secondary">View Now</button>
+                      <button class="u-invoices__btn btn btn_secondary">Print</button>
+                  </tr>
+                }
+              </tbody>
+            </table>
+          </div><!--/user__content-->
+      </div>
+    </div><!--/container-->
+  </div><!--/user-->
+  
+</main>
+
+@@include('block/footer/footer.html')
+@@include('block/up.html')
+@@include('block/scripts.html')

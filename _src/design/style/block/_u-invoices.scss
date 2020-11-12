@@ -1,0 +1,77 @@
+.u-invoices {
+  table-layout: fixed;
+
+  td {
+    @media (max-width: $lg) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
+    @media (max-width: $md) {
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+  }
+}
+
+.u-invoices__thead {
+  @media (max-width: $md) {
+    display: none;
+  }
+}
+
+.u-invoices__tr {
+  @media (max-width: $md) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+.u-invoices__td-description {
+  width: 27%;
+  @media (max-width: $md) {
+    width: 100%;
+  }
+}
+
+.u-invoices__td-invoice {
+  width: 27%;
+  @media (max-width: $md) {
+    width: 100%;
+  }
+}
+
+.u-invoices__td-order {
+  width: 27%;
+  @media (max-width: $md) {
+    width: 100%;
+  }
+}
+
+.u-invoices__td-btn {
+  width: 270px;
+  @media (max-width: $md) {
+    width: 100%;
+
+    text-align: left;
+  }
+}
+
+.u-invoices__btn {
+  width: 100px;
+  padding: 3px 12px;
+
+  @media (max-width: $md) {
+    width: 180px;
+  }
+
+  @media (max-width: $xs) {
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}

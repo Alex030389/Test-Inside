@@ -1,0 +1,38 @@
+.u-settings {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 30px 40px;
+
+  background-color: $c-blue-lite;
+
+  @media (max-width: $sm) {
+    padding: 30px 15px;
+  }
+}
+
+.u-settings__title-2 {
+  text-align: left;
+
+  @media (max-width: $sm) {
+    text-align: center;
+  }
+}
+
+.u-settings__box-form-group {
+  margin-bottom: 40px;
+}
+
+.u-settings__current-email {
+  margin-bottom: 24px;
+
+  font-size: 24px;
+
+  span {
+    color: $c-blue-dark;
+  }
+
+  @media (max-width: $sm) {
+    font-size: 20px;
+    text-align: center;
+  }
+}

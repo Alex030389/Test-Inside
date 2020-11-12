@@ -1,0 +1,60 @@
+.user {
+  height: 100%;
+}
+
+.user__box {
+}
+
+.user__nav {
+  width: 240px;
+  padding: 30px 30px 30px 30px;
+
+  background-color: $c-blue-lite;
+
+  @media (max-width: $xl) {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 10px;
+  }
+}
+
+.user__menu {
+  @media (max-width: $xl) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.user__menu-item {
+  padding: 10px 15px;
+
+  @media (max-width: $sm) {
+    padding: 6px 10px;
+  }
+}
+
+.user__menu-link {
+  font-size: 20px;
+  color: $c-blue-dark;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &_current {
+    border-bottom: 1px solid $c-blue-dark;
+  }
+
+  @media (max-width: $xl) {
+    font-size: 17px;
+  }
+}
+
+.user__content {
+  width: calc(100% - 300px);
+
+  @media (max-width: $xl) {
+    width: 100%;
+  }
+}

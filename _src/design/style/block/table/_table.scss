@@ -16,9 +16,20 @@
     tr {
       border-bottom: 1px solid #b4b4b4;
 
+      @media (max-width: $lg) {
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+
       &:last-child {
         border-color: #000;
       }
+    }
+  }
+
+  tbody tr:first-child {
+    @media (max-width: $md) {
+      border-top: 1px solid #000;
     }
   }
 
@@ -33,7 +44,13 @@
     padding: 10px 30px;
 
     @media (max-width: $lg) {
-      padding: 8px 15px;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
+    @media (max-width: $md) {
+      padding-top: 8px;
+      padding-bottom: 8px;
     }
   }
 }

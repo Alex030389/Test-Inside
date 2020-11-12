@@ -5,14 +5,18 @@
   text-align: center;
   color: $c-green;
 
-  // text-align
-  &_ta_left {
-    text-align: left;
+  @media (max-width: $md) {
+    font-size: 32px;
   }
 
   // font-size
-  @media (max-width: $md) {
-    font-size: 32px;
+  &_sm {
+    font-size: 38px;
+  }
+
+  // text-align
+  &_ta_left {
+    text-align: left;
   }
 
   // margin-bottom
@@ -26,8 +30,5 @@
     @media (max-width: $md) {
       margin-bottom: 20px;
     }
-  }
-
-  &_mb_lg {
   }
 }
