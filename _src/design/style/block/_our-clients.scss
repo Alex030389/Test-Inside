@@ -5,22 +5,27 @@
 }
 
 .our-clients__list {
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
+  justify-content: center;
 }
 
 .our-clients__item {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: $c-3;
+  width: $c-2;
   margin-bottom: 20px;
 
   @media (max-width: $md) {
-    width: $c-4;
+    width: $c-3;
   }
 
   @media (max-width: $sm) {
+    width: $c-4;
+  }
+
+  @media (max-width: $xs) {
     width: $c-6;
   }
 

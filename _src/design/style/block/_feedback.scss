@@ -13,6 +13,14 @@
   @media (max-width: $md) {
     width: $c-12;
   }
+
+  &_lg {
+    width: $c-6;
+
+    @media (max-width: $lg) {
+      width: $c-12;
+    }
+  }
 }
 
 .feedback__header {

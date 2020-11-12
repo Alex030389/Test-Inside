@@ -1,16 +1,22 @@
 .exam-training {
 }
 
-.exam-training__box {
-}
-
 .exam-trainign__box-img {
   display: flex;
   justify-content: center;
   align-items: center;
   width: $c-3;
+
+  @media (max-width: $md) {
+    width: $c-12;
+    margin-bottom: 20px;
+  }
 }
 
 .exam-trainign__box-exam {
   width: $c-9;
+
+  @media (max-width: $md) {
+    width: $c-12;
+  }
 }
