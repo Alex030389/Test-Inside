@@ -26,22 +26,34 @@
   border-top: 1px solid #4b6f87;
 
   &::after {
-    content: "+";
+    content: "";
     position: absolute;
     top: 50%;
     right: 16px;
 
-    font-size: 36px;
-    line-height: 1;
+    width: 16px;
+    height: 2px;
 
+    background-color: #fff;
+    transform: translateY(-50%);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 23px;
+
+    width: 2px;
+    height: 16px;
+
+    background-color: #fff;
     transform: translateY(-50%);
   }
 
   &_open {
-    &::after {
-      content: "–";
-
-      transform: translateY(-60%);
+    &::before {
+      height: 0;
     }
   }
 }
