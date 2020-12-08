@@ -4,11 +4,13 @@
 .exam-trainign__box-img {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: $c-3;
+  margin-top: 40px;
 
   @media (max-width: $md) {
     width: $c-12;
+    margin-top: 0;
     margin-bottom: 20px;
   }
 }

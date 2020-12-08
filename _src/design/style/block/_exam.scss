@@ -1,6 +1,10 @@
 .exam {
   padding-bottom: 0;
 
+  &_border-bottom {
+    border-bottom: 1px solid $c-blue-lite;
+  }
+
   @media (max-width: $md) {
     padding-bottom: 0;
   }
@@ -83,6 +87,11 @@
 
 .exam__contains-list {
   margin-bottom: 30px;
+
+  &_type-2 {
+    margin-bottom: 10px;
+    padding-top: 30px;
+  }
 }
 
 .exam__contains-item {

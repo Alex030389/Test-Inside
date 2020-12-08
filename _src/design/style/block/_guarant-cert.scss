@@ -10,7 +10,7 @@
 
   line-height: 1.2;
 
-  background: url(../img/ui/guarantee.png) left center no-repeat;
+  background: url(/design/img/ui/guarantee.png) left center no-repeat;
 
   @media (max-width: $md) {
     padding-left: 140px;
@@ -38,7 +38,7 @@
     min-height: 72px;
     padding-left: 100px;
 
-    background: url(../img/ui/guarantee.png) left center no-repeat;
+    background: url(/design/img/ui/guarantee.png) left center no-repeat;
     background-size: 70px;
   }
 }

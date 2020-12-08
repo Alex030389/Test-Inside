@@ -1,6 +1,19 @@
 .sitemap {
 }
 
+.sitemap__info {
+  // color: $c-blue;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 35px;
+  background-color: $c-blue-lite;
+  padding: 10px 8px;
+  color: $c-blue-dark;
+  @media (max-width: $lg) {
+    display: none;
+  }
+}
+
 .sitemap__list {
   column-count: 5;
   column-gap: 30px;

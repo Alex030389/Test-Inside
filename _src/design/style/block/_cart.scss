@@ -131,6 +131,46 @@
   }
 }
 
+.cart__promo-response {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: $c-green;
+  text-align: center;
+
+  @media (max-width: $md) {
+    text-align: right;
+  }
+
+  @media (max-width: $sm) {
+    text-align: center;
+  }
+}
+
+.cart__subtotal {
+  display: block;
+  width: 200px;
+  margin-left: 78%;
+
+  font-size: 20px;
+
+  @media (max-width: $lg) {
+    margin-left: auto;
+  }
+}
+
+.cart__discount {
+  display: block;
+  width: 200px;
+  margin-left: 78%;
+
+  font-size: 20px;
+  color: $c-blue;
+
+  @media (max-width: $lg) {
+    margin-left: auto;
+  }
+}
+
 .cart__total {
   display: block;
   width: 200px;
@@ -143,15 +183,16 @@
   }
 }
 
-
-.cart__td-pay {
-  width: 100%;
-}
-
 .cart__pay {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
+  padding-top: 40px;
+
+  @media (max-width: $md) {
+    margin-bottom: 30px;
+  }
 }
 
 .cart__pay-title {
@@ -170,12 +211,22 @@
 
 .cart__pay-btn {
   flex-shrink: 0;
-  width: 120px;
+  width: 130px;
   padding: 8px 16px;
 }
 
-.cart__td-pay-note {
+.cart__note {
+  margin-bottom: 60px;
+
   text-align: center;
+
+  @media (max-width: $md) {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $sm) {
+    text-align: left;
+  }
 }
 
 .cart__box-bottom-btn {

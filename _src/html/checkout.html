@@ -2,7 +2,6 @@
 @@include('block/header/header-2.html')
 
 <main class="main">
-  @@include('block/breadcrumb.html')
   <!-- //////////////////////////////////////////////////// cart -->
   <section class="cart cart_pb_0 section">
     <div class="container">
@@ -19,6 +18,7 @@
             <th></th>
           </tr>
         </thead>
+
         <tbody>
           <tr>
             <td class="cart__td-exam">
@@ -68,6 +68,7 @@
             <td class="cart__td-remove"><a class="cart__btn-remove btn btn_secondary" href="#">Remove</a></td>
           </tr>
         </tbody>
+
         <tfoot>
           <tr>
             <td class="cart__td-promo" colspan="4">
@@ -83,27 +84,33 @@
             </td>
           </tr>
           <tr>
-            <td colspan="4" class="cart__td-total">
-              <span class="cart__total">Total $394.95</span>              
-            </td>
-          </tr>
-          <tr>
-            <td class="cart__td-pay" colspan="4">
-              <div class="cart__pay">
-                <span class="cart__pay-title">Pay with Credit Card or Debit Card</span>
-                <form action="#">
-                  <button class="cart__pay-btn btn btn_secondary">Pay with Card</button>
-                </form>
+            <td class="cart__td-promo" colspan="4">
+              <div class="cart__promo promo">
+                <div class="cart__promo-response">Promotion code 'TEST20': 20.00% discount.</div>                
               </div>
             </td>
           </tr>
           <tr>
-            <td class="cart__td-pay-note" colspan="4">
-              <span class="text text_fw_500">Note:</span> The charges on your Credit/Debit Card Statement will appear as paid to 'Training Solutions Ltd' - our partner in accepting payments.
+            <td colspan="4" class="cart__td-total">
+              <div class="cart__subtotal">Subtotal: $400.83</div>
+              <div class="cart__discount">Discount: $20.99</div>
+              <div class="cart__total">Total $394.95</div>              
             </td>
-          </tr>
+          </tr>          
         </tfoot>
       </table>
+
+      <div class="cart__pay">
+        <span class="cart__pay-title">Pay with Credit Card or Debit Card</span>
+        <form action="#">
+          <button class="cart__pay-btn btn btn_secondary">Pay with Card</button>
+        </form>
+      </div>
+      
+      <div class="cart__note" colspan="4">
+        <span class="text text_fw_500">Note:</span> The charges on your Credit/Debit Card Statement will appear as paid to 'Training Solutions Ltd' - our partner in accepting payments.
+      </div>
+
     </div><!--/container-->
 
     
