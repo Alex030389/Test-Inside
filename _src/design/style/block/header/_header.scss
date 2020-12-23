@@ -1,9 +1,23 @@
 .header {
+  height: 210px;
+
   background: $c-blue-linear;
   border-bottom: 7px solid #e0ef7b;
 
   @media (max-width: $lg) {
     border-bottom: none;
+  }
+
+  @media (max-width: $sl) {
+    height: 194px;
+  }
+
+  @media (max-width: $xl) {
+    height: 189px;
+  }
+
+  @media (max-width: $lg) {
+    height: auto;
   }
 }
 
@@ -257,7 +271,6 @@
   opacity: 0;
 
   transition: .3s;
-
   @media (max-width: $lg) {
     display: none;
   }

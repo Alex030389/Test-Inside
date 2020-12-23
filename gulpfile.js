@@ -130,9 +130,7 @@ const cssLib = () => {
   return src(path.src.styleLib)
   .pipe(sass())
   .pipe(cleancss())
-  .pipe(rename({
-    suffix: '.min'
-  }))
+  .pipe(rename({ suffix: '.min' }))
   .pipe(dest(path.dist.style))
   .pipe(browserSync.stream());
 }
